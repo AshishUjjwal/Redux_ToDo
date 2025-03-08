@@ -1,0 +1,21 @@
+2. Feature-Based Folder Structure (Recommended for Medium to Large Projects)
+A more scalable approach is feature-based structuring:
+
+src/
+│── redux/
+│   ├── store.js
+│   ├── features/
+│   │   ├── auth/
+│   │   │   ├── authSlice.js
+│   │   │   ├── authActions.js
+│   │   │   ├── authSelectors.js
+│   │   ├── products/
+│   │   │   ├── productSlice.js
+│   │   │   ├── productActions.js
+│   │   │   ├── productSelectors.js
+
+Each feature/module (e.g., auth, products) has its own folder.
+Inside each feature folder:
+Slice.js (if using Redux Toolkit) or reducers.js
+Actions.js (for action creators)
+Selectors.js (for selecting data from the store)
