@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { createTodo } from '../features/todo/todoActions';  // Import action from todoActions.js
+import { createTodo } from '../redux/features/todofeature/todoAction.js';  // Import action from todoActions.js
 
 function AddTodo() {
     const [input, setInput] = useState('');

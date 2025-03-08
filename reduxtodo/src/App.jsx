@@ -1,5 +1,5 @@
-import AddTodo from './components/AddTodo'
-import Todos from './components/Todos'
+import AddTodo from './components/AddTodo.jsx'
+import Todos from './components/Todos.jsx'
 import './App.css'
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <>
       <h1>Learn about redux toolkit</h1>
       <AddTodo />
-      {/* <Todos /> */}
+      <Todos />
     </>
   )
 }
